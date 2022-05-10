@@ -1,5 +1,5 @@
 
-# trexEngine
+# paricleSim
 
 simple particle simulation engine
 
@@ -15,7 +15,7 @@ this program requires the following dependencies
 First clone the repository
 
 ```bash
-  git clone git@github.com:HonzaKubita/trexEngine.git
+  git clone git@github.com:HonzaKubita/particleSim.git
 ```
 
 Then install required modules
