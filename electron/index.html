@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>trexEngine</title>
+</head>
+<body>
+  <div class="main-container">
+    
+    <div>
+      <div class="menu-container">
+        <button id="addParticle" class="menu-button">Add particle</button>
+        <select id="particleType" class="menu-select">
+          <option value="type">Charge</option>
+          <option value="negative">Negative charge</option>
+          <option value="positive">Positive charge</option>
+          <option value="neutral">Neutral charge</option>
+        </select>
+        <button id="removeParticle" class="menu-button">Remove particle</button>
+      </div>
+    
+    
+      <div class="menu-container">
+        <button id="addConnection" class="menu-button">Add connection</button>
+        <select id="connectionType" class="menu-select">
+          <option value="type">Type</option>
+          <option value="spring">Spring</option>
+          <option value="rubber">Rubber</option>
+          <option value="rope">Rope</option>
+          <option value="stick">Stick</option>
+        </select>
+        <button id="removeConnection" class="menu-button">Remove connection</button>
+      </div>
+    
+    
+      <div class="menu-container">
+        <button id="addPlatform" class="menu-button">Add platform</button>
+        <select id="platformType" class="menu-select">
+          <option value="type">Type</option>
+          <option value="bouncy">Bouncy</option>
+          <option value="stiff">Stiff</option>
+        </select>
+        <button id="removePlatform" class="menu-button">Remove platform</button>
+      </div>
+    
+    
+      <div class="menu-container">
+        <button id="startStopBtn" class="menu-button start-button">Start</button>
+        <button id="resetBtn" class="menu-button rst-button">Reset</button>
+      </div>
+      
+      
+      <hr>
+      
+      <button id="settingsBtn" class="menu-button">Settings</button>
+      
+      <div id="settings" class="settings-container">
+        
+        <p>Settings:</p>
+
+        <!-- Settigns will be inserted here by js -->
+    
+      </div>
+    </div>
+    
+    <canvas id="canvas" width="620" height="580"></canvas>
+      
+    <div class="object-data-container">
+      <p id="objectType">Nothing selected</p>
+      <div id="objectData">
+      </div>
+      <button id="applyData" class="menu-button" style="display: none;">Apply</button>
+    </div>
+      
+  </div>
+
+
+  
+  <div id="output" class="console">
+    App failed to start.
+  </div>
+  <button id="clearConsole" class="menu-button">Clear console</button>
+
+  <script type="module" src="../main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+body {
+  background-color: #252526;
+}
+
+.menu-container {
+  display: flex;
+  flex-direction: row;
+  background-color: #3d3d3d;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 4px;
+}
+.menu-button, .menu-select {
+  margin-right: 5px;
+  border: none;
+  background-color: rgb(134, 134, 134);
+  padding: 5px;
+  border-radius: 15px;
+  transition: all 0.2s;
+}
+.menu-button:hover, .menu-selector:hover{
+  background-color: rgb(100, 100, 100);
+}
+.menu-button:active {
+  background-color: rgb(44, 44, 44);
+}
+
+.rst-button {
+  background-color: #940000;
+}
+.rst-button:hover {
+  background-color: #7a0c00;
+}
+.rst-button:active {
+  background-color: #5a0900;
+}
+
+.start-button {
+  background-color: #009400;
+}
+.start-button:hover {
+  background-color: #007800;
+}
+.start-button:active {
+  background-color: #005a00;
+}
+
+.pause-button {
+  background-color: #ffd900;
+}
+.pause-button:hover {
+  background-color: #ffb400;
+}
+.pause-button:active {
+  background-color: #ff9000;
+}
+
+
+.console {
+  font-family: monospace;
+  border: solid 3px rgb(0, 0, 0);
+  margin: 10px;
+  border-radius: 15px;
+  height: 100px;
+  width: 80%;
+  overflow-y: scroll;
+  overflow-wrap: normal;
+}
+.settings-container {
+  flex-direction: column;
+  background-color: #3d3d3d;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 4px;
+  max-height: 0px;
+  overflow-y: hidden;
+  transition: all 0.5s;
+}
+.settings-show {
+  max-height: 300px;
+}
+
+.object-data-container {
+  display: flex; 
+  flex-direction: column;
+  background-color: #3d3d3d;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 4px;
+  min-width: 250px;
+
+  transition: all 0.5s;
+}
+
+input {
+  margin: 5px;
+  border: none;
+  background-color: rgb(134, 134, 134);
+  padding: 5px;
+  border-radius: 15px;
+}
+
+#canvas {
+  border: solid 3px rgb(0, 0, 0);
+  border-radius: 15px;
+  width: 620px;
+  height: 580px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+}
