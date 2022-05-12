@@ -30,7 +30,7 @@ class Main {
 		this.mainWindow = new BrowserWindow({
       width: 1300, 
       height: 800,
-      icon: __dirname + '/trexEngineLogo.png',
+      icon: __dirname + '/particleSimLogo.png',
       webPreferences: {
         nodeIntegration: true
       },
