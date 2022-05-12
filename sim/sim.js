@@ -48,6 +48,7 @@ export default {
   },
   stop() {
     this.running = false; // Mark sumulation as stopped
+    render.renderSim(); // Render simulation before stopping
     utils.log('Simulation stopped');
   },
   reset() {
@@ -60,7 +61,7 @@ export default {
       platforms: [],
       connections: [],
     };
-    render.clear(); // Clear cavnas
+    render.renderSim(); // Render simulation before stopping
     utils.log('Simulation reset');
   },
 }
@@ -108,6 +109,10 @@ async function simLoop() {
       await utils.delay(100);
     }
     Sim.frame += 1;
+    if (Sim.data.frameStop && Sim.frame == Sim.data.frameStop) {
+      Sim.stop();
+      return;
+    }
     requestAnimationFrame(simLoop);
   }
 }

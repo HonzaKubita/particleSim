@@ -20,8 +20,7 @@ export default {
     })
 
     this.add('Stop at frame', 'frameStop', 'checkbox');
-    this.add('Frame:', 'frameStopInput', 'number');
-    this.add('Show grid', 'showGrid', 'checkbox');
+    this.add('Stop frame', 'frameStop', 'number');
     this.add('Slowmotion', 'slowmotion', 'checkbox');
     this.add('Show velocity vectors', 'showVelocityVectors', 'checkbox');
     this.add('Infinite velocity', 'infiniteVelocity', 'checkbox');
