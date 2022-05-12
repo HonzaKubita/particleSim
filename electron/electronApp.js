@@ -29,7 +29,7 @@ class Main {
 		// Create the browser window.
 		this.mainWindow = new BrowserWindow({
       width: 1300, 
-      height: 800,
+      height: 850,
       icon: __dirname + '/particleSimLogo.png',
       webPreferences: {
         nodeIntegration: true

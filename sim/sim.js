@@ -14,6 +14,7 @@ import Sim from './sim.js';
 // Sim main object
 export default {
   running: false,
+  frame: 0,
   simObjects: {
     particles: [],
     platforms: [],
@@ -53,6 +54,7 @@ export default {
     if (this.running) { // Stop simulation if it is running
       this.stop();
     }
+    this.frame = 0;
     this.simObjects = { // Clear all objects
       particles: [],
       platforms: [],
@@ -105,6 +107,7 @@ async function simLoop() {
     if (Sim.data.slowmotion) {
       await utils.delay(100);
     }
+    Sim.frame += 1;
     requestAnimationFrame(simLoop);
   }
 }

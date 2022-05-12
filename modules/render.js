@@ -88,6 +88,9 @@ export default {
       });
     }
 
+    this.c.font = "15px Arial";
+    this.c.fillText(`Frame: ${Sim.frame}`, 0, 20); // Display frame number
+
     // Sim.simObjects.particles.forEach(particle => { // Draw particle outlines
     //   if (particle.selected) {
     //     this.drawOutline(particle)
