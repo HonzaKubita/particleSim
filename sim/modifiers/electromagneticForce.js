@@ -18,7 +18,7 @@ export default function electromagneticForce(objects) {
         } else {
           // Particles have the same charge so they repel each other
           particle.velocity = Vector.subtract(particle.velocity, forceVector);
-          render.drawVector(particle.position, -forceVector.multiply(100), "red");
+          render.drawVector(particle.position, forceVector.multiply(-100), "red");
         }
       }
     });

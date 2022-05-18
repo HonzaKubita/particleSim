@@ -65,8 +65,8 @@ export default {
     this.c.lineTo(dx, dy);
     this.c.stroke();
     this.c.font = "15px Arial";
-    let speed = vector.magnitude().toString()
-    this.c.fillText(speed.slice(0, speed.indexOf('.') + 2), dx, dy);
+    let magnitude = vector.magnitude().toString()
+    this.c.fillText(magnitude.slice(0, magnitude.indexOf('.') + 2), dx, dy);
   },
 
   renderSim() {
